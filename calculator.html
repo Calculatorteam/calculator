@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calc</title>
+    <link rel="stylesheet" type="text/css" href="css/calculator.css">
+</head>
+<body>
+<form name="Calc">
+    <table border=4>
+        <tr>
+            <td>
+                <input TYPE="text"   NAME="Input" Size="16">
+                <br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" NAME="one"   VALUE="  1  " onclick="Calc.Input.value += '1'">
+                <input type="button" NAME="two"   VALUE="  2  " onclick="Calc.Input.value += '2'">
+                <input type="button" NAME="three" VALUE="  3  " onclick="Calc.Input.value += '3'">
+                <input type="button" NAME="plus"  VALUE="  +  " onclick="Calc.Input.value += ' + '">
+                <br>
+                <input type="button" NAME="four"  VALUE="  4  " onclick="Calc.Input.value += '4'">
+                <input type="button" NAME="five"  VALUE="  5  " onclick="Calc.Input.value += '5'">
+                <input type="button" NAME="six"   VALUE="  6  " onclick="Calc.Input.value += '6'">
+                <input type="button" NAME="minus" VALUE="  -  " onclick="Calc.Input.value += ' - '">
+                <br>
+                <input type="button" NAME="seven" VALUE="  7  " onclick="Calc.Input.value += '7'">
+                <input type="button" NAME="eight" VALUE="  8  " onclick="Calc.Input.value += '8'">
+                <input type="button" NAME="nine"  VALUE="  9  " onclick="Calc.Input.value += '9'">
+                <input type="button" NAME="times" VALUE="  x  " onclick="Calc.Input.value += ' * '">
+                <br>
+                <input type="button" NAME="clear" VALUE="  c  " onclick="Calc.Input.value = ''">
+                <input type="button" NAME="zero"  VALUE="  0  " onclick="Calc.Input.value += '0'">
+                <input type="button" NAME="equal" VALUE="  =  " onclick="Calc.Input.value = eval(Calc.Input.value)">
+                <input type="button" NAME="div"   VALUE="  /  " onclick="Calc.Input.value += ' / '">
+                <br>
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
