@@ -8,40 +8,48 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<form name="Calc">
-    <table border=4>
-        <tr>
-            <td>
-                <input TYPE="text"   NAME="Input" Size="16">
-                <br>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <input type="button" NAME="one"   VALUE="  1  " onclick="Calc.Input.value += '1'">
-                <input type="button" NAME="two"   VALUE="  2  " onclick="Calc.Input.value += '2'">
-                <input type="button" NAME="three" VALUE="  3  " onclick="Calc.Input.value += '3'">
-                <input type="button" NAME="plus"  VALUE="  +  " onclick="Calc.Input.value += ' + '">
-                <br>
-                <input type="button" NAME="four"  VALUE="  4  " onclick="Calc.Input.value += '4'">
-                <input type="button" NAME="five"  VALUE="  5  " onclick="Calc.Input.value += '5'">
-                <input type="button" NAME="six"   VALUE="  6  " onclick="Calc.Input.value += '6'">
-                <input type="button" NAME="minus" VALUE="  -  " onclick="Calc.Input.value += ' - '">
-                <br>
-                <input type="button" NAME="seven" VALUE="  7  " onclick="Calc.Input.value += '7'">
-                <input type="button" NAME="eight" VALUE="  8  " onclick="Calc.Input.value += '8'">
-                <input type="button" NAME="nine"  VALUE="  9  " onclick="Calc.Input.value += '9'">
-                <input type="button" NAME="times" VALUE="  x  " onclick="Calc.Input.value += ' * '">
-                <br>
-                <input type="button" NAME="clear" VALUE="  c  " onclick="Calc.Input.value = ''">
-                <input type="button" NAME="zero"  VALUE="  0  " onclick="Calc.Input.value += '0'">
-                <input type="button" NAME="equal" VALUE="  =  " onclick="Calc.Input.value = eval(Calc.Input.value)">
-                <input type="button" NAME="div"   VALUE="  /  " onclick="Calc.Input.value += ' / '">
-                <br>
-            </td>
-        </tr>
-    </table>
-</form>
+<div id="background">
+
+    <div id="result"></div>
+
+    <div id="main">
+        <div id="first-rows">
+            <button class="del-bg" id="delete">Del</button>
+            <button value="%" class="btn-style operator opera-bg fall-back">%</button>
+            <button value="+" class="btn-style opera-bg value align operator">+</button>
+        </div>
+
+        <div class="rows">
+            <button value="7" class="btn-style num-bg num first-child">7</button>
+            <button value="8" class="btn-style num-bg num">8</button>
+            <button value="9" class="btn-style num-bg num">9</button>
+            <button value="-" class="btn-style opera-bg operator">-</button>
+        </div>
+
+        <div class="rows">
+            <button value="4" class="btn-style num-bg num first-child">4</button>
+            <button value="5" class="btn-style num-bg num">5</button>
+            <button value="6" class="btn-style num-bg num">6</button>
+            <button value="*" class="btn-style opera-bg operator">x</button>
+        </div>
+
+        <div class="rows">
+            <button value="1" class="btn-style num-bg num first-child">1</button>
+            <button value="2" class="btn-style num-bg num">2</button>
+            <button value="3" class="btn-style num-bg num">3</button>
+            <button value="/" class="btn-style opera-bg operator">/</button>
+        </div>
+
+        <div class="rows">
+            <button value="0" class="num-bg zero" id="delete">0</button>
+            <button value="." class="btn-style num-bg period fall-back">.</button>
+            <button value="=" id="eqn-bg" class="eqn align">=</button>
+        </div>
+
+    </div>
+
+</div>
+
 
 
 <script
