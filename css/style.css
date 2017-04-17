@@ -12,6 +12,11 @@ html input[type=button]{
 }
 
 
+html input[type=button]:hover {
+    background-image: url("/calculator/img/IMG_0027.jpg");
+    background-size: 60px;
+}
+
 form {
     display: block;
     margin-top: 3px;
@@ -45,3 +50,4 @@ table {
     text-align: center;
     margin: auto;
 }
+
