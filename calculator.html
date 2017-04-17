@@ -8,47 +8,49 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<div id="background">
 
-    <div id="result"></div>
+<html>
+<head>
+    <title>Calculator Project</title>
+    <script src="calculator.js"></script>
 
-    <div id="main">
-        <div id="first-rows">
-            <button class="del-bg" id="delete">Del</button>
-            <button value="%" class="btn-style operator opera-bg fall-back">%</button>
-            <button value="+" class="btn-style opera-bg value align operator">+</button>
-        </div>
+<body>
 
-        <div class="rows">
-            <button value="7" class="btn-style num-bg num first-child">7</button>
-            <button value="8" class="btn-style num-bg num">8</button>
-            <button value="9" class="btn-style num-bg num">9</button>
-            <button value="-" class="btn-style opera-bg operator">-</button>
-        </div>
 
-        <div class="rows">
-            <button value="4" class="btn-style num-bg num first-child">4</button>
-            <button value="5" class="btn-style num-bg num">5</button>
-            <button value="6" class="btn-style num-bg num">6</button>
-            <button value="*" class="btn-style opera-bg operator">x</button>
-        </div>
+<form name="case">
+    <input name="display" id="display" value="">
 
-        <div class="rows">
-            <button value="1" class="btn-style num-bg num first-child">1</button>
-            <button value="2" class="btn-style num-bg num">2</button>
-            <button value="3" class="btn-style num-bg num">3</button>
-            <button value="/" class="btn-style opera-bg operator">/</button>
-        </div>
+    <input type="button" class="digit" value="1" onclick="run1()">
+    <input type="button" class="digit" value="2" onclick="run2()">
+    <input type="button" class="digit" value="3" onclick="run3()">
+    <input type="button" id="plus" 	class="oper" 	value="+"  onclick="runPlus()">
 
-        <div class="rows">
-            <button value="0" class="num-bg zero" id="delete">0</button>
-            <button value="." class="btn-style num-bg period fall-back">.</button>
-            <button value="=" id="eqn-bg" class="eqn align">=</button>
-        </div>
+    <input type="button" class="digit" value="4" onclick="run4()">
+    <input type="button" class="digit" value="5" onclick="run5()">
+    <input type="button" class="digit" value="6" onclick="run6()">
+    <input type="button" id="minus" 	class="oper" 	value="-" onclick="runMinus()" >
+
+    <input type="button" class="digit" value="7" onclick="run7()">
+    <input type="button" class="digit" value="8" onclick="run8()">
+    <input type="button" class="digit" value="9" onclick="run9()">
+    <input type="button" id="divide" 	class="oper" 	value="/" onclick="runDivide()" >
+
+    <input type="button" class="digit" value="0" onclick="run0()">
+    <input type="button" id="clearMem" class="oper" value="C" onclick="runC()">
+
+
+    <input type="button" id="equal" 	class="oper"	value="=" onclick="runEquals()">
+    <input type="button" id="multiply" 	class="oper" 	value="*" onclick="runMultiply()">
 
     </div>
 
-</div>
+
+
+
+    </div>
+
+
+</body>
 
 
 

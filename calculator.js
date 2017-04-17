@@ -1,118 +1,72 @@
-window.onload = function() {
+function run1(){
 
-    var current,
-        screen,
-        output,
-        limit,
-        zero,
-        period,
-        operator;
+    document.case.display.value += "1"
+};
+function run2(){
 
-    screen = document.getElementById("result");
+    document.case.display.value += "2"
+};
+function run3(){
 
-    var elem = document.querySelectorAll(".num");
+    document.case.display.value += "3"
+};
+function run4(){
 
-    var len = elem.length;
+    document.case.display.value += "4"
+};
+function run5(){
 
-    for(var i = 0; i < len; i++ ) {
+    document.case.display.value += "5"
+};
 
-        elem[i].addEventListener("click",function() {
+function run6(){
 
-            num = this.value;
+    document.case.display.value += "6"
+};
 
-            output = screen.innerHTML +=num;
+function run7(){
 
-            limit = output.length;
+    document.case.display.value += "7"
+};
 
-            if(limit > 16 ) {
+function run8(){
 
-                alert("Sorry no more input is allowed");
+    document.case.display.value += "8"
+};
 
-            }
+function run9(){
 
-        },false);
+    document.case.display.value += "9"
+};
 
-    }
+function run0(){
 
-    document.querySelector(".zero").addEventListener("click",function() {
+    document.case.display.value += "0"
+};
+function runPlus(){
 
-        zero = this.value;
+    document.case.display.value += "+"
+};
+function runMinus(){
 
-        if(screen.innerHTML === "") {
+    document.case.display.value += "-"
+};
+function runDivide(){
 
-            output = screen.innerHTML = zero;
-        }
+    document.case.display.value += "/"
+};
+function runMultiply(){
 
-        else if(screen.innerHTML === output) {
+    document.case.display.value += "*"
+};
 
-            output = screen.innerHTML +=zero;
+function runC(){
 
-        }
-
-    },false);
-
-    document.querySelector(".period").addEventListener("click",function() {
-
-        period = this.value;
-
-        if(screen.innerHTML === "") {
-
-            output = screen.innerHTML = screen.innerHTML.concat("0.");
-
-        }
-
-        else if(screen.innerHTML === output) {
-
-            screen.innerHTML = screen.innerHTML.concat(".");
-
-        }
-
-    },false);
+    document.case.display.value = ""
+};
 
 
-    document.querySelector("#eqn-bg").addEventListener("click",function() {
-
-        if(screen.innerHTML === output) {
-
-            screen.innerHTML = eval(output);
-        }
-
-        else {
-            screen.innerHTML = "";
-        }
-
-    },false);
-
-    document.querySelector("#delete").addEventListener("click",function() {
-
-        screen.innerHTML = "";
-
-    },false);
-
-
-    var elem1 = document.querySelectorAll(".operator");
-
-    var len1 = elem1.length;
-
-    for(var i = 0; i < len1; i++ ) {
-
-        elem1[i].addEventListener("click",function() {
-
-            operator = this.value;
-
-            if(screen.innerHTML === "") {
-
-                screen.innerHTML = screen.innerHTML.concat("");
-
-            }
-
-            else if(output) {
-
-                screen.innerHTML = output.concat(operator);
-
-            }
-
-        },false);
-
-    }
+function runEquals() {
+    var equals = eval(document.case.display.value)
+    document.case.display.value = equals;
 }
