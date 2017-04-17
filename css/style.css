@@ -1,5 +1,9 @@
 html input[type=button]{
-    background-color: yellowgreen;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
     height: 75px;
     width: 65px;
     margin: 1.5px;
@@ -14,10 +18,26 @@ form {
 input {
     height: 50px;
     width: 300px;
+    background-color: black;
 }
 
 
 table {
+    color: #ffffff;
+    font-size: 30px;
+    text-shadow: 0 1px 0 rgba(2, 2, 2, 1),
+    0 2px 0 #c9c9c9,
+    0 3px 0 #bbb,
+    0 4px 0 #b9b9b9,
+    0 5px 0 #aaa,
+    0 6px 1px rgba(0, 0, 0, .1),
+    0 0 5px rgba(0, 0, 0, .1),
+    0 1px 3px rgba(0, 0, 0, .3),
+    0 3px 5px rgba(0, 0, 0, .2),
+    0 5px 10px rgba(0, 0, 0, .25),
+    0 10px 10px rgba(0, 0, 0, .2),
+    0 20px 20px rgba(0, 0, 0, .15);
+    background-image: url("/calculator/img/woodbg.jpg");
     width: 300px;
     height: 300px;
     text-align: center;
