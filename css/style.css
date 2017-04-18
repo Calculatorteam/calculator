@@ -1,67 +1,52 @@
-body {
-    margin: 0 auto;
-    width: 800px;
-}
-#container {
-    width: 400px ;
-    margin-left: auto ;
-    margin-right: auto ;
-}
-#calculator {
-    width: 400px;
-    height: 480px;
-    margin-top: 20px;
-    border: 3px solid #247BA0;
-    border-radius: 5px;
-    background-color: #50514F;
-    box-shadow: 3px 3px black;
-}
-input {
-    width: 400px;
-    height: 96px;
-    font-size: 70px;
-    text-align: right;
-    margin-left: auto ;
-    margin-right: auto ;
-    border: 2px solid #F25F5C;
-    border-radius: 5px;
-}
 button {
-    width: 90px;
-    height: 90px;
-    margin-left: 5px;
-    margin-top: 3px;
+    background-image: url("../img/matrixtv2.png");
+    background-size: 105px;
     border-radius: 10px;
-    background-color: #FFE066;
-    color: #247BA0;
-    font-weight: bold;
+    border-color: transparent;
+    Height: 105px;
+    width: 105px;
+    color: lawngreen;
     font-size: 20px;
+    text-decoration: blink;
 }
-#clear {
-    background-color: #247BA0;
-    color: #FFE066;
+
+#calc {
+    position: absolute;
+    bottom: 100px;
+    left: 33%;
+    margin: auto;
+    border-color: transparent;
+    border-radius: 25px;
+    text-align: center;
+    height: 500px;
+    width: 475px;
+    background-color: rgba (0,0,0,.5);
 }
-#abs {
-    background-color: #F25F5C;
-    color: #FFE066;
-}
-#modulous {
-    background-color: #F25F5C;
-    color: #FFE066;
-}
-#squareRoot {
-    background-color: #F25F5C;
-    color: #FFE066;
-}
-#decimal {
-    background-color: #F25F5C;
-    color: #FFE066;
-}
+
 button:hover {
-    background-color: #247BA0;
-    color: #FFE066;
+    background-image: url("../img/IMG_0027.jpg");
+    background-size: 75px;
+
 }
-#clear:hover {
-    background-color: #F25F5C;
-    color: #247BA0;
+
+input {
+    font-size: 20px;
+    height: 25px;
+    width: 100px;
+    padding: 0px;
 }
+
+h2 {
+    color: lawngreen;
+}
+.displayelement {
+    border: hidden;
+    background-color: black;
+    color: lawngreen;
+}
+
+/*basic reset*/
+* {margin: 0; padding: 0;}
+/*adding a black bg to the body to make things clearer*/
+body {background: black;}
+canvas {display: block;}

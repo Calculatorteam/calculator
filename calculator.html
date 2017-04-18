@@ -1,36 +1,51 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Calculator</title>
+    <meta charset="UTF-8">
+    <title>Math Machine</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+
 </head>
 <body>
-<div id="container">
-    <form id="calculator" name="calculator">
-        <input id="results" type="text" value="" placeholder="Codeup!  ">
-        <br>
-        <button id="one" type="btn" class="number" value="1">1</button>
-        <button id="two" type="btn" class="number" value="2">2</button>
-        <button id="three" type="btn" class="number" value="3">3</button>
-        <button id="add" type="btn" class="calculate" value="+">+</button>
-        <br>
-        <button id="four" type="btn" class="number" value="4">4</button>
-        <button id="five" type="btn" class="number" value="5">5</button>
-        <button id="six" type="btn" class="number" value="6">6</button>
-        <button id="subtract" type="btn" class="calculate" value="-">-</button>
-        <br>
-        <button id="seven" type="btn" class="number" value="7">7</button>
-        <button id="eight" type="btn" class="number" value="8">8</button>
-        <button id="nine" type="btn" class="number" value="9">9</button>
-        <button id="multiply" type="btn" class="calculate" value="*">x</button>
-        <br>
-        <button id="clear" type="btn" class="number" value="C">C</button>
-        <button id="zero" type="btn" class="number" value="0">0</button>
-        <button id="equals" type="btn" class="number" value="=">=</button>
-        <button id="divide" type="btn" class="calculate" value="/">/</button>
-        <br>
-    </form>
-</div>
+<canvas id="c"></canvas>
+    <div id="calc">
+        <p>
+        <h2>Math Machine</h2></p>
+        <p style="background-color: black;">
+            <input class="displayelement" type="text" id="leftOp">
+            <input class="displayelement" type="text" id="operator">
+            <input class="displayelement" type="text" id="rightOp">
+        </p>
+
+        <p>
+            <button id="btnOne" style="background-color:black">1</button>
+            <button id="btnTwo">2</button>
+            <button id="btnThree">3</button>
+            <button id="btnPlus">+</button>
+        </p>
+
+        <p>
+            <button id="btnFour">4</button>
+            <button id="btnFive">5</button>
+            <button id="btnSix">6</button>
+            <button id="btnMinus">-</button>
+        </p>
+
+        <p>
+            <button id="btnSeven">7</button>
+            <button id="btnEight">8</button>
+            <button id="btnNine">9</button>
+            <button id="btnMultiply">*</button>
+        </p>
+
+        <p>
+            <button id="btnClear">C</button>
+            <button id="btnZero">0</button>
+            <button id="btnEqual">=</button>
+            <button id="btnDivide">/</button>
+        </p>
+
+    </div>
+    <script src="calculator.js"></script>
 </body>
-<script src="calculator.js"></script>
 </html>
