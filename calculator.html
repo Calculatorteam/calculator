@@ -1,36 +1,44 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <title>Calculator</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-<div id="container">
-    <form id="calculator" name="calculator">
-        <input id="results" type="text" value="" placeholder="Codeup!  ">
-        <br>
-        <button id="one" type="button" class="number" value="1">1</button>
-        <button id="two" type="button" class="number" value="2">2</button>
-        <button id="three" type="button" class="number" value="3">3</button>
-        <button id="add" type="button" class="calculate" value="+">+</button>
-        <br>
-        <button id="four" type="button" class="number" value="4">4</button>
-        <button id="five" type="button" class="number" value="5">5</button>
-        <button id="six" type="button" class="number" value="6">6</button>
-        <button id="subtract" type="button" class="calculate" value="-">-</button>
-        <br>
-        <button id="seven" type="button" class="number" value="7">7</button>
-        <button id="eight" type="button" class="number" value="8">8</button>
-        <button id="nine" type="button" class="number" value="9">9</button>
-        <button id="multiply" type="button" class="calculate" value="*">x</button>
-        <br>
-        <button id="clear" type="button" class="number" value="C">C</button>
-        <button id="zero" type="button" class="number" value="0">0</button>
-        <button id="equals" type="button" class="number" value="=">=</button>
-        <button id="divide" type="button" class="calculate" value="/">/</button>
-        <br>
-    </form>
-</div>
-</body>
+
+<p>
+    <input type="text" id="leftOp">
+    <input type="text" id="operator">
+    <input type="text" id="rightOp">
+</p>
+
+<p>
+    <button id="btnOne">1</button>
+    <button id="btnTwo">2</button>
+    <button id="btnThree">3</button>
+    <button id="btnPlus">+</button>
+</p>
+
+<p>
+    <button id="btnFour">4</button>
+    <button id="btnFive">5</button>
+    <button id="btnSix">6</button>
+    <button id="btnMinus">-</button>
+</p>
+
+<p>
+    <button id="btnSeven">7</button>
+    <button id="btnEight">8</button>
+    <button id="btnNine">9</button>
+    <button id="btnMult">*</button>
+</p>
+
+<p>
+    <button id="btnClear">C</button>
+    <button id="btnZero">0</button>
+    <button id="btnEqual">=</button>
+    <button id="btnDivide">/</button>
+</p>
+
 <script src="calculator.js"></script>
-</html>
+</body>
