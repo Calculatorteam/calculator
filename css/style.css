@@ -1,68 +1,67 @@
-/*html, body, div, span, applet, object, iframe,*/
-/*h1, h2, h3, h4, h5, h6, p, blockquote, pre,*/
-/*a, abbr, acronym, address, big, cite, code,*/
-/*del, dfn, em, font, img, ins, kbd, q, s, samp,*/
-/*small, strike, strong, sub, sup, tt, var,*/
-/*b, u, i, center,*/
-/*dl, dt, dd, ol, ul, li,*/
-/*fieldset, form, label, legend,*/
-/*table, caption, tbody, tfoot, thead, tr, th, td {*/
-    /*margin: 0;*/
-    /*padding: 0;*/
-    /*border: 0;*/
-    /*outline: 0;*/
-    /*font-size: 16px;*/
-    /*vertical-align: baseline;*/
-    /*background: transparent;*/
-/*}*/
-
-
 body {
-    line-height: 1;
+    margin: 0 auto;
+    width: 800px;
 }
-ul {
-    list-style: none;
+#container {
+    width: 400px ;
+    margin-left: auto ;
+    margin-right: auto ;
 }
-
-
-
-body {
-    width: 500px;
+#calculator {
+    width: 400px;
+    height: 480px;
+    margin-top: 20px;
+    border: 3px solid #247BA0;
+    border-radius: 5px;
+    background-color: #50514F;
+    box-shadow: 3px 3px black;
 }
-form {
-    background-color: gray;
-    text-align: center;
-    padding: 7px;
-
-}
-
-#display {
-    width: 98%;
-    height: 30px;
+input {
+    width: 400px;
+    height: 96px;
+    font-size: 70px;
     text-align: right;
-    font-size: 1.5rem;
-}
-.digit {
-    font-size: 2rem;
-    background-color: red;
-    height: 55px;
-    width: 20%;
+    margin-left: auto ;
+    margin-right: auto ;
+    border: 2px solid #F25F5C;
     border-radius: 5px;
-    display: inline-block;
-    padding: 5px;
 }
-.oper {
-    font-size: 2rem;
-    background-color: blue;
-    height: 55px;
-    width: 20%;
-    border-radius: 5px;
-    display: inline-block;
-    padding: 5px;
+button {
+    width: 90px;
+    height: 90px;
+    margin-left: 5px;
+    margin-top: 3px;
+    border-radius: 10px;
+    background-color: #FFE066;
+    color: #247BA0;
+    font-weight: bold;
+    font-size: 20px;
 }
-#clearMem {
-    background-color: green;
+#clear {
+    background-color: #247BA0;
+    color: #FFE066;
 }
-#equal {
-    background-color: yellow;
+#abs {
+    background-color: #F25F5C;
+    color: #FFE066;
+}
+#modulous {
+    background-color: #F25F5C;
+    color: #FFE066;
+}
+#squareRoot {
+    background-color: #F25F5C;
+    color: #FFE066;
+}
+#decimal {
+    background-color: #F25F5C;
+    color: #FFE066;
+}
+button:hover {
+    background-color: #247BA0;
+    color: #FFE066;
+}
+#clear:hover {
+    background-color: #F25F5C;
+    color: #247BA0;
 }
