@@ -1,56 +1,78 @@
-//Declare and initialize my button operations
-var add = document.getElementById("add"), subtract = document.getElementById("subtract"), multiply = document.getElementById("multiply"), divide = document.getElementById("divide"), clearbutton = document.getElementById("clear"), equals = document.getElementById("equals");
+var plus = document.querySelector('.plus'),
+    minus = document.querySelector('.minus'),
+    multiply = document.querySelector('.multiply'),
+    divide = document.querySelector('.divide'),
+    operators = [plus, minus, multiply, divide];
+    decimal = document.querySelector('.decimal');
 
-//Math.abs(x)
-//= document.getElementById("")
+var nums = [];
 
-//array to push operations into
-var allnumbers = [];
+var operator = '',
+    operatorPressed = false;
 
-//Declare numbers variable for 'for' loop
-var numbers = document.querySelectorAll(".number");
+var calculate = document.querySelector('.submit'),
+    clearButton = document.querySelector('.clear');
 
-//For Loop is to power what happens when the user clicks on any of the buttons
-//.... which all have the .number class
-for (var i = 0; i < numbers.length; i++) {
-    numbers[i].addEventListener("click", function(event){
-        var valueAsInteger = parseInt(event.target.value);
-        allnumbers.push(valueAsInteger);
-        document.getElementById("results").value += event.target.value;
+var output = document.querySelector('.output');
+
+var value1 = '',
+    value2 = '';
+
+for(var i = 0; i < 10; i++) {
+    nums[i] = document.querySelector('.num' + i);
+    nums[i].addEventListener('click', function(){
+        if (operatorPressed == false) {
+            value1 = value1 + this.innerHTML;
+            output.innerHTML = value1;
+        }
+        else if (operatorPressed) {
+            value2 = value2 + this.innerHTML;
+            output.innerHTML = value1 + operator + value2;
+        }
+    });
+}
+
+for(var i = 0; i < operators.length; i++) {
+    operators[i].addEventListener('click', function(){
+        if(value1 == '') {
+            return
+        }
+        else {
+            if(this.innerHTML == '×') {
+                operator = '*';
+            }
+            else if(this.innerHTML == '÷') {
+                operator = '/';
+            }
+            else {
+                operator = this.innerHTML;
+            }
+            operatorPressed = true;
+            output.innerHTML = output.innerHTML +  operator;
+        }
     })
-};
-add.addEventListener("click", function(event){
-    document.getElementById("results").value += "+";
-    allnumbers.push("+");
-});
-subtract.addEventListener("click", function(event){
-    document.getElementById("results").value += "-";
-    allnumbers.push("-");
-});
-divide.addEventListener("click", function(event){
-    document.getElementById("results").value += "/";
-    allnumbers.push("/");
-});
-multiply.addEventListener("click", function(event){
-    document.getElementById("results").value += "*";
-    allnumbers.push("*");
-});
-equals.addEventListener("click", function(event){
-    var a = allnumbers[0];
-    var b = allnumbers[2];
-    if (allnumbers[1] === "+") {
-        var result = a + b;
-    } else if (allnumbers[1] === "-") {
-        var result = a - b;
-    } else if (allnumbers[1] === "/") {
-        var result = a / b;
-    } else if (allnumbers[1] === "*") {
-        var result = a * b;
+}
+
+calculate.addEventListener('click', function(){
+    if(value2 == '') {
+        return
     }
-    console.log(allnumbers);
-    document.getElementById("results").value = result;
+    else {
+        output.innerHTML = eval(parseInt(value1) + operator + parseInt(value2));
+        console.log(value1, operator, value2);
+        value1 = output.innerHTML;
+        value2 = '';
+        operator = '';
+        operatorPressed = false;
+    }
 });
-clear.addEventListener("click", function(event){
-    document.getElementById("results").value = "";
-    allnumbers = [];
+
+clearButton.addEventListener('click', function() {
+    value1 = '';
+    value2 = '';
+    operator = '';
+    operatorPressed = false;
+    output.innerHTML = '';
 });
+
+

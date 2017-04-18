@@ -1,0 +1,68 @@
+body {
+    background-color: black;
+}
+
+.calculator {
+    width: 405px;
+    border: solid 1px;
+    background: greenyellow;
+    margin: 50px;
+    padding: 20px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.output {
+    font-family: monospace;
+    padding: 20px;
+    height: 50px;
+    width: 356px;
+    margin-bottom: 2px;
+    font-size: 20px;
+    text-align: right;
+    background-color: #bccd97;
+    border: 2px solid black;
+    font-size: 70px;
+}
+
+.numbers {
+    width: 300px;
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+.submit {
+    width: 400px;
+    background-color: black;
+}
+
+.clear {
+    width: 100px;
+    background-color: black;
+}
+
+.decimal {
+    width: 100px;
+    background-color: black;
+}
+
+
+button {
+    border: solid 1px white;
+    background: none;
+    width: 100px;
+    height: 80px;
+    background: darkblue;
+    cursor: pointer;
+    color: white;
+    font-size: 30px;
+}
+
+.operators {
+    display: inline-flex;
+    width: 100px;
+    flex-wrap: wrap;
+    position: relative;
+    left: -3px;
+}
+

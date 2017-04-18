@@ -5,32 +5,39 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-<div id="container">
-    <form id="calculator" name="calculator">
-        <input id="results" type="text" value="" placeholder="Codeup!  ">
-        <br>
-        <button id="one" type="button" class="number" value="1">1</button>
-        <button id="two" type="button" class="number" value="2">2</button>
-        <button id="three" type="button" class="number" value="3">3</button>
-        <button id="add" type="button" class="calculate" value="+">+</button>
-        <br>
-        <button id="four" type="button" class="number" value="4">4</button>
-        <button id="five" type="button" class="number" value="5">5</button>
-        <button id="six" type="button" class="number" value="6">6</button>
-        <button id="subtract" type="button" class="calculate" value="-">-</button>
-        <br>
-        <button id="seven" type="button" class="number" value="7">7</button>
-        <button id="eight" type="button" class="number" value="8">8</button>
-        <button id="nine" type="button" class="number" value="9">9</button>
-        <button id="multiply" type="button" class="calculate" value="*">x</button>
-        <br>
-        <button id="clear" type="button" class="number" value="C">C</button>
-        <button id="zero" type="button" class="number" value="0">0</button>
-        <button id="equals" type="button" class="number" value="=">=</button>
-        <button id="divide" type="button" class="calculate" value="/">/</button>
-        <br>
-    </form>
+
+
+<div class="calculator">
+    <div class="output">
+    </div>
+
+    <div class="numbers">
+        <button class="num7">7</button>
+        <button class="num8">8</button>
+        <button class="num9">9</button>
+        <button class="num4">4</button>
+        <button class="num5">5</button>
+        <button class="num6">6</button>
+        <button class="num1">1</button>
+        <button class="num2">2</button>
+        <button class="num3">3</button>
+        <button class="clear">C</button>
+        <button class="decimal">.</button>
+        <button class="num0">0</button>
+    </div>
+
+    <div class="operators">
+        <button class="plus">+</button>
+        <button class="minus">-</button>
+        <button class="multiply">×</button>
+        <button class="divide">÷</button>
+    </div>
+
+    <button class="submit">=</button>
+
 </div>
+
+
 </body>
 <script src="calculator.js"></script>
 </html>
